@@ -6,6 +6,7 @@ import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Data
 @AllArgsConstructor
@@ -20,7 +21,7 @@ public class Grade {
     private Double value;
 
     @CreationTimestamp
-    private LocalDate dateAdded;
+    private LocalDateTime dateAdded;
 
     @ManyToOne()
     @EqualsAndHashCode.Exclude
